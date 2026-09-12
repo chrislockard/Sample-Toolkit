@@ -6,7 +6,7 @@ and generate a pseudo-random password.  The resulting password is copied to the 
 automatically.
 Makes use of PyObjC - http://pythonhosted.org/pyobjc/install.html
 Only work in OS X at the moment.
-@Dagorim - www.dagorim.com
+@unl0ckd - www.chrislockard.net
 """
 from optparse import OptionParser
 from AppKit import NSPasteboard, NSArray
@@ -19,7 +19,7 @@ pb.clearContents()
 parser = OptionParser()
 parser.add_option("-l", "--length", dest="pwLength",
 				help="Specify password length in characters")
-parser.add_option("-s", "--special", dest="pwSpecial", 
+parser.add_option("-s", "--special", dest="pwSpecial",
 				help="Specify whether to use special characters",
 				default=False, action='store_true')
 
